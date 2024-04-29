@@ -1,17 +1,19 @@
+import {Link} from "react-router-dom";
+
 const Header = () => {
     return (
         <nav className="navbar navbar-light">
             <div className="container">
-                <a className="navbar-brand" href="/public">conduit</a>
+                <Link className="navbar-brand" to="/">conduit</Link>
                 <ul className="nav navbar-nav pull-xs-right">
                     <li className="nav-item">
-                        <a className="nav-link active" href="/public">Home</a>
+                        <Link className="nav-link active" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/login">Sign in</a>
+                        <Link className="nav-link" to="/login">Sign in</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/register">Sign up</a>
+                        <Link className="nav-link" to="/register">Sign up</Link>
                     </li>
                 </ul>
             </div>
